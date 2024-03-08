@@ -6,7 +6,7 @@ options.add_argument("--headless")
 browser = webdriver.Firefox(options=options)
 browser.get('http://google.com/')
 
-if(browser.title=="Google"):
+if(browser.title=="Goole"):
     print ("yes!!!")
 else:
     print ("no!!!")
