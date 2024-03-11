@@ -21,5 +21,5 @@ def test_hi2():
     browser.get('http://win-1ics5jffm16.dev.local:9080/navigator/')
     browser.implicitly_wait(2)
     actual = browser.find_element(By.XPATH, "// *[ @ id = \"ecm_widget_layout_NavigatorMainLayout_0_LoginPane\"] / div[1] / table / tbody / tr / td[2] / div[1]").text
-    expected = "Welcome to IBM Content Navigator"
+    expected = "Welcome to IBM Contet Navigator"
     assert actual == expected
