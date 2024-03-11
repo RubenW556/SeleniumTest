@@ -12,5 +12,5 @@ class hit(unittest.TestCase):
         browser = webdriver.Firefox(options=options)
         browser.get('http://win-1ics5jffm16.dev.local:9080/navigator/')
         sleep(5)
-        self.assertEqual(browser.title, "IBM Content Navigator")
+        self.assertEqual(browser.title, "IBM Contet Navigator")
         browser.quit()
