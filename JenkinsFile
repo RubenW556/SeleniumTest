@@ -2,6 +2,6 @@ node {
     stage "Create build output"
     checkout scm
     bat "dir"
-    bat "echo path"
+    bat "path"
     bat "python --version"
 }
