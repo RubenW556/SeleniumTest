@@ -5,5 +5,8 @@ node {
     bat "path"
     bat "python --version"
     bat "pip --version"
-    bat "python -m venv ./venv . ./venv/bin/activate pip install -r ./requirements.txt pytest --junitxml report.xml"
+    bat "python -m venv ./venv
+    . ./venv/bin/activate pip install -r
+    ./requirements.txt pytest
+    --junitxml report.xml"
 }
