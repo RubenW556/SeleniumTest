@@ -1,4 +1,4 @@
 node {
     stage "Create build output"
-    bat "echo hi"
+    bat "dir"
 }
