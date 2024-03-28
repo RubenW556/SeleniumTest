@@ -9,5 +9,5 @@ node {
     bat "call ./venv/Scripts/activate.bat"
     bat "pip install -r ./requirements.txt"
     bat "pytest --junitxml report.xml"
-    junit "./report.xml"
+    junit "report.xml"
 }
