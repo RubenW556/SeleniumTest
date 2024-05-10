@@ -18,7 +18,7 @@ class TestCase():
         options.add_argument('--ignore-ssl-errors=yes')
         options.add_argument('--ignore-certificate-errors')
         self.driver = webdriver.Chrome(options)
-        self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(5)
         self.vars = {}
 
     def teardown_method(self, method):
@@ -46,7 +46,7 @@ class TestCase():
         self.driver.execute_script("window.scrollTo(0,0)")
         WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".icmRolePicker"))).click()
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Trainee')]").click()
-        time.sleep(8)
+        time.sleep(10)
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Add Case')]").click()
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Request Training')]").click()
         self.driver.find_element(By.ID, "pvr_widget_editors_TextBoxEditor_0").send_keys("hi")
