@@ -52,6 +52,7 @@ class TestCase():
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Trainer')]").click()
         self.driver.find_element(By.XPATH, "//*[@id='icm_widget_SelectorTabContainer_0_tablist']/div[4]/div/div[2]").click()
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'New Approval')]").click()
+        time.sleep(2)
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Approve')]").click()
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Plan Training')]").click()
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Complete')]").click()
