@@ -36,7 +36,6 @@ class TestCase():
     #     self.run()
     def run(self):
         self.driver.get("https://baw21.novadoc.ecm:9443/navigator/login.jsp")
-        self.driver.set_window_size(1552, 832)
         self.driver.find_element(By.NAME, "j_username").click()
         self.driver.find_element(By.NAME, "j_username").click()
         self.driver.find_element(By.NAME, "j_username").send_keys("p8admin")
