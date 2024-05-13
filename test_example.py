@@ -26,14 +26,14 @@ class TestCase():
 
     def test_case(self):
         self.run()
-    # def test_case1(self):
-    #     self.run()
-    # def test_case2(self):
-    #     self.run()
-    # def test_case3(self):
-    #     self.run()
-    # def test_case4(self):
-    #     self.run()
+    def test_case1(self):
+        self.run()
+    def test_case2(self):
+        self.run()
+    def test_case3(self):
+        self.run()
+    def test_case4(self):
+        self.run()
     def run(self):
         self.driver.get("https://baw21.novadoc.ecm:9443/navigator/login.jsp")
         self.driver.find_element(By.NAME, "j_username").send_keys("p8admin")
@@ -49,20 +49,16 @@ class TestCase():
         self.driver.find_element(By.ID, "pvr_widget_editors_TextBoxEditor_1").send_keys("hi")
         self.driver.find_element(By.ID, "pvr_widget_editors_TextBoxEditor_2").send_keys("hi")
         self.driver.find_elements(By.XPATH, "//*[contains(text(), 'Add')]").pop().click()
-        time.sleep(2)
-        element = self.driver.find_element(By.CSS_SELECTOR, ".icmRolePicker")
         time.sleep(3)
-        element.click()
+        self.driver.find_element(By.CSS_SELECTOR, ".icmRolePicker").click()
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Trainer')]").click()
         self.driver.find_element(By.XPATH, "//*[@id='icm_widget_SelectorTabContainer_0_tablist']/div[4]/div/div[2]").click()
-        element = self.driver.find_element(By.XPATH, "//*[contains(text(), 'New Approval')]")
         time.sleep(3)
-        element.click()
-        element = self.driver.find_element(By.XPATH, "//*[contains(text(), 'Approve')]")
+        self.driver.find_element(By.XPATH, "//*[contains(text(), 'New Approval')]").click()
         time.sleep(3)
-        element.click()
-        element = self.driver.find_element(By.XPATH, "//*[contains(text(), 'Plan Training')]")
+        self.driver.find_element(By.XPATH, "//*[contains(text(), 'Approve')]").click()
         time.sleep(3)
-        element.click()
+        self.driver.find_element(By.XPATH, "//*[contains(text(), 'Plan Training')]").click()
+        time.sleep(3)
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Complete')]").click()
 
