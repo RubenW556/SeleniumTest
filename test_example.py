@@ -26,14 +26,14 @@ class TestCase():
 
     def test_case(self):
         self.run()
-    # def test_case1(self):
-    #     self.run()
-    # def test_case2(self):
-    #     self.run()
-    # def test_case3(self):
-    #     self.run()
-    # def test_case4(self):
-    #     self.run()
+    def test_case1(self):
+        self.run()
+    def test_case2(self):
+        self.run()
+    def test_case3(self):
+        self.run()
+    def test_case4(self):
+        self.run()
     def run(self):
         self.driver.get("https://baw21.novadoc.ecm:9443/navigator/login.jsp")
         self.driver.find_element(By.NAME, "j_username").send_keys("p8admin")
