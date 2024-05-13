@@ -41,7 +41,7 @@ class TestCase():
         self.driver.find_element(By.NAME, "login").click()
         WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".icmRolePicker")))
         time.sleep(2)
-        self.driver.find_element(By.CSS, ".icmRolePicker").click()
+        self.driver.find_element(By.CSS_SELECTOR, ".icmRolePicker").click()
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Trainee')]").click()
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Add Case')]").click()
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Request Training')]").click()
